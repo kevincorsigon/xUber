@@ -36,7 +36,7 @@ namespace UberClone.Services
 
             using (var httpClient = CreateClient())
             {
-                var response = await httpClient.GetAsync($"api/directions/json?mode=driving&transit_routing_preference=less_driving&origin={originLatitude},{originLongitude}&destination={destinationLatitude},{destinationLongitude}&key={_googleMapsKey}").ConfigureAwait(false);
+                var response = await httpClient.GetAsync($"api/directions/json?mode=driving&transit_routing_preference=less_driving&origin={originLatitude.Replace(",",".")},{originLongitude.Replace(",", ".")}&destination={destinationLatitude.Replace(",", ".")},{destinationLongitude.Replace(",", ".")}&key={_googleMapsKey}").ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
                     var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);

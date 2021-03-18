@@ -196,9 +196,9 @@ namespace UberClone.ViewModels
         {
             RecentPlaces = new ObservableCollection<GooglePlaceAutoCompletePrediction>()
             {
-                {new GooglePlaceAutoCompletePrediction(){ PlaceId="ChIJq0wAE_CJr44RtWSsTkp4ZEM", StructuredFormatting=new StructuredFormatting(){ MainText="Random Place", SecondaryText="Paseo de los locutores #32" } } },
-                {new GooglePlaceAutoCompletePrediction(){ PlaceId="ChIJq0wAE_CJr44RtWSsTkp4ZEM", StructuredFormatting=new StructuredFormatting(){ MainText="Green Tower", SecondaryText="Ensanche Naco #4343, Green 232" } } },
-                {new GooglePlaceAutoCompletePrediction(){ PlaceId="ChIJm02ImNyJr44RNs73uor8pFU", StructuredFormatting=new StructuredFormatting(){ MainText="Tienda Aurora", SecondaryText="Rafael Augusto Sanchez" } } },
+                {new GooglePlaceAutoCompletePrediction(){ PlaceId="ChIJKREvJH6yz5QRfaFYamh8avU", StructuredFormatting=new StructuredFormatting(){ MainText="Kinkaku-ji", SecondaryText="Kinkaku-ji - Chácara das Palmeiras, Itapecerica da Serra" } } },
+                {new GooglePlaceAutoCompletePrediction(){ PlaceId="ChIJ08zoDTdLzpQRxc4AYA7tT30", StructuredFormatting=new StructuredFormatting(){ MainText="Parque Ecológico da Várzea de Embu Guaçu", SecondaryText="Rodovia José Simões Louro Júnior - Jardim Valflor" } } },
+      
             };
 
             RecentPlace1 = RecentPlaces[0];

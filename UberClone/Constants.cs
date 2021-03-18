@@ -3,6 +3,6 @@ namespace UberClone
 {
     public static class Constants
     {
-        public const string GoogleMapsApiKey = "<YOUR GOOGLE API KEY GOES HERE>";
+        public const string GoogleMapsApiKey = "AIzaSyDz_2Hco6jhjTd397zTgPnh0OVsB2TZUa0";
     }
 }

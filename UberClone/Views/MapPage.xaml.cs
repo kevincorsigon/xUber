@@ -160,14 +160,14 @@ namespace UberClone.Views
         {
             map.Polylines.Clear();
             map.Pins.Clear();
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 3; i++)
             {
                 var random = new Random();
 
                 map.Pins.Add(new Xamarin.Forms.GoogleMaps.Pin
                 {
                     Type = PinType.Place,
-                    Position = new Position(location.Latitude + (random.NextDouble() * 0.008), location.Longitude + (random.NextDouble() * 0.008)),
+                    Position = new Position(location.Latitude + (random.NextDouble() * 0.2), location.Longitude + (random.NextDouble() * 0.008)),
                     Label = "Car",
                     Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("ic_car.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "ic_car.png", WidthRequest = 25, HeightRequest = 25 }),
                     Tag = string.Empty
